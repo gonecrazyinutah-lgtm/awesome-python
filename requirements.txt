@@ -1,2 +1,5 @@
-mkdocs==1.0.4
-mkdocs-material==4.0.2
+# Documentation site toolchain (works on Windows, macOS and Linux).
+# Requires Python 3.9+ (Python 3.11+ recommended).
+# Install with:  pip install -r requirements.txt
+mkdocs==1.6.1
+mkdocs-material==9.7.7

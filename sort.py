@@ -16,8 +16,13 @@
 
 def sort_blocks():
     # First, we load the current README into memory
-    with open('README.md', 'r') as read_me_file:
+    with open('README.md', 'r', encoding='utf-8') as read_me_file:
         read_me = read_me_file.read()
+
+    # Legacy separator ('- - -') no longer exists in the README.
+    # If it's gone there is nothing more to sort here, so exit gracefully.
+    if '- - -' not in read_me:
+        return
 
     # Separating the 'table of contents' from the contents (blocks)
     table_of_contents = ''.join(read_me.split('- - -')[0])
@@ -39,7 +44,7 @@ def sort_blocks():
     blocks[0] = inner_blocks
     final_README = table_of_contents + '- - -' + ''.join(blocks)
 
-    with open('README.md', 'w+') as sorted_file:
+    with open('README.md', 'w+', encoding='utf-8') as sorted_file:
         sorted_file.write(final_README)
 
 def main():

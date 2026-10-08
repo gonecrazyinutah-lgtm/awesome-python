@@ -11,16 +11,13 @@ theme:
     accent: pink
 extra:
   social:
-    - type: github
+    - icon: fontawesome/brands/github
       link: https://github.com/vinta
-    - type: twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/vinta
-    - type: linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/vinta
-google_analytics:
-  - UA-510626-7
-  - auto
 extra_css:
-    - css/extra.css
+  - css/extra.css
 nav:
   - "Life is short, you need Python.": "index.md"

@@ -5,5 +5,10 @@
 docs/index.md
 site/
 
+# Local virtual environments (created by install.bat / Install.ps1)
+.venv/
+venv/
+ENV/
+
 # PyCharm IDE
 .idea
